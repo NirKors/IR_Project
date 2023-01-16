@@ -104,9 +104,9 @@ def search():
 
     query = qexpand(query)
 
-    weight_title = 1
-    weight_body = 1 / 2
-    weight_anchor = 1 / 4
+    weight_title = 0.40
+    weight_body = 0.50
+    weight_anchor = 0.10
 
     query_counter = Counter(query)  # A counter of our queries.
     b = 0.75
@@ -152,9 +152,6 @@ def search():
     for d_id, weight in ids.most_common(100):
         weighted[d_id] += weight / max_t_w * weight_title
 
-    # PAGE_RANK:
-
-    # PAGE_VIEW:
     # TOTAL:
     for d_id, _ in weighted.most_common(100):
         title = pages[d_id][0]
