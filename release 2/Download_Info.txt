@@ -1,0 +1,32 @@
+mkdir title_index
+gcloud storage cp -r gs://nir399513/title_index/*.bin gs://nir399513/title_index/*.pkl /home/nirkor/title_index/
+mkdir body_index
+gcloud storage cp -r gs://nir399513/body_index/*.bin gs://nir399513/body_index/*.pkl /home/nirkor/body_index/
+mkdir anchor_index
+gcloud storage cp -r gs://nir399513/anchor_index/*.bin gs://nir399513/anchor_index/*.pkl /home/nirkor/anchor_index/
+mkdir pr
+gcloud storage cp -r gs://nir399513/pr/ /home/nirkor/
+mkdir processed
+gcloud storage cp -r gs://nir399513/processed/ /home/nirkor/
+
+
+
+*****************
+
+
+mkdir title_index
+gcloud storage cp -r gs://training_index/title_index/*.bin gs://training_index/title_index/*.pkl /home/nirkor/title_index/
+
+mkdir body_index
+gcloud storage cp -r gs://training_index/body_index/*.bin gs://training_index/body_index/*.pkl /home/nirkor/body_index/
+
+mkdir anchor_index
+gcloud storage cp -r gs://training_index/anchor_index/*.bin gs://training_index/anchor_index/*.pkl /home/nirkor/anchor_index/
+
+mkdir pr
+gcloud storage cp -r gs://training_index/pr/ /home/nirkor/
+
+mkdir processed
+gcloud storage cp -r gs://training_index/processed/ /home/nirkor/
+
+
